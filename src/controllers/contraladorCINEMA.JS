@@ -359,8 +359,15 @@
 
      // crear actores
      let Actores=document.createElement("P")
-     Actores.classList.add("text-left","tamano","")
+     Actores.classList.add("text-left","tamano")
      Actores.textContent="Actores: "+pelicula.Actores
+
+       // clasificacion
+      
+       let clasificacion=document.createElement("P")
+       clasificacion.classList.add("text-left","tamano","fw-bold")
+       clasificacion.textContent="Clasificacion: "+pelicula.clasificacion
+ 
 
 
 
