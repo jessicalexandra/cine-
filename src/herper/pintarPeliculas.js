@@ -60,8 +60,8 @@ export function pintarPeliculas(peliculas,fila){
     // 7  creamos la sipnosis
 
     let sipnosis=document.createElement("p")
-    sipnosis.classList.add("d-block")
-    sipnosis.textContent="Sipnosis: "+pelicula.sinopsis.substring(0,50)+"..."
+    sipnosis.classList.add("d-none")
+    sipnosis.textContent="Sipnosis: "+pelicula.sinopsis
 
     // crear la duracion
      let duracion=document.createElement("P")
@@ -72,6 +72,12 @@ export function pintarPeliculas(peliculas,fila){
      let Actores=document.createElement("P")
      Actores.classList.add("text-left","tamano")
      Actores.textContent="Actores: "+pelicula.Actores
+
+     // creamos director
+
+     let director=document.createElement("P")
+     director.classList.add("text-left","tamano")
+     director.textContent="Director: "+pelicula.Director
 
      // clasificacion
       
@@ -90,6 +96,7 @@ export function pintarPeliculas(peliculas,fila){
        tarjeta.appendChild(sipnosis)
        tarjeta.appendChild(duracion)
        tarjeta.appendChild(Actores)
+       tarjeta.appendChild(director)
        tarjeta.appendChild(clasificacion)
        columna.appendChild(tarjeta)
        fila.appendChild(columna)
