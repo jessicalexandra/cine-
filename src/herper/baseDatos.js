@@ -84,7 +84,6 @@
         poster:"https://firebasestorage.googleapis.com/v0/b/cinejs-ee0c2.appspot.com/o/80d80cb5ba5c-480x670.png?alt=media&token=82eddea4-19df-47f5-a87a-37e73f51b6f4",
         sinopsis: "Un pueblo de gatos se encuentra en peligro y un héroe inesperado surge para ayudarlos: ¡un perro llamado Hank!",
         clasificacion:"General",
-        clasificacion:"",
         idioma: "En",
         Director: "Mark ",
         Actores :["Michael Cera","Ricky Gervais","Hounsou","Samuel "]
