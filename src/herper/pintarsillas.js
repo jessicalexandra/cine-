@@ -12,13 +12,15 @@ export function pintarsillas(asientos,cinema){
             fotosilla.setAttribute("id",asiento.id)
     
             if (asiento.estado==0) {
-                fotosilla.src="../../assets/img/silla-de-cine (2).png"
+                fotosilla.src="../../assets/img/negra.png"
                 
-            }else if (asiento.estado==2) {
-                fotosilla.src="../../assets/img/silla-de-cine (1).png"
+            }else if (asiento.estado==1) {
+                
+                fotosilla.src="../../assets/img/verde.png"
+            }else  {
+                fotosilla.src="../../assets/img/rojo.png"
                 
             }
-           
     
             // padres e hijos
             columna.appendChild(fotosilla)

@@ -27,10 +27,10 @@ cinema.addEventListener("click",function (evento) {
                 //encontre el asiento donde el usu se quiere sentar
                 if (asiento.estado==0) {
                   asiento.estado=1
-                  evento.target.src="../../assets/img/silla-de-cine.png"  
+                  evento.target.src="../../assets/img/verde.png"  
                 }else if(asiento.estado==1){
                     asiento.estado=0
-                    evento.target.src="../../assets/img/silla-de-cine (2).png"  
+                    evento.target.src="../../assets/img/negra.png"  
                 }
                 
             }
