@@ -6,7 +6,7 @@ export function pintarsillas(asientos,cinema){
     
             let columna=document.createElement("div")
             columna.classList.add("col-2")
-    
+            
             let fotosilla=document.createElement("img")
             fotosilla.classList.add("img-fluid","w-100")
             fotosilla.setAttribute("id",asiento.id)
