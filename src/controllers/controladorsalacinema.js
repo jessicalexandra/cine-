@@ -14,9 +14,17 @@ let cinema=document.getElementById("salacinema")
 
 
 
-pintarsillas(asientos,cinema)
+
 
 let contadorseleccionado=0;
+
+let asientosocupados=JSON.parse(localStorage.getItem("local"))
+if (asientosocupados!=null) {
+  pintarsillas(Object.values(asientosocupados),cinema);
+  asientos=(Object.values(asientosocupados));
+}else{
+  pintarsillas(asientos,cinema)
+}
 
 // evento de clic en la sala de cine 
 cinema.addEventListener("click",function (evento) {
@@ -52,6 +60,8 @@ let validareserva= document.getElementById("validareserva");
 let pelicula=JSON.parse(localStorage.getItem("peliculaSeleccionada"));
   let pintarreserva=document.getElementById("pintarreserva")
   validareserva.addEventListener("click",function () {
+
+
   let puesto= [];
   cinema.innerHTML="";
   pintarreserva.innerHTML='';

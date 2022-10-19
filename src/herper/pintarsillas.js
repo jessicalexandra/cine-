@@ -19,7 +19,7 @@ export function pintarsillas(asientos,cinema){
                 fotosilla.src="../../assets/img/verde.png"
             }else  {
                 fotosilla.src="../../assets/img/rojo.png"
-                
+                localStorage.setItem("local",JSON.stringify(asientos))
             }
     
             // padres e hijos
